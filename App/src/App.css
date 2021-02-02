@@ -1,0 +1,959 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* /////////////////////////////////////////////// */
+
+
+
+/* <main component> */
+
+.main{
+  background-image: url('/src/banner.png');
+  /* min-height: 700px; */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* </main component> */
+
+
+
+.numnum{
+  background-color: #0ef342;
+}
+
+
+.zero{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  margin-top: 60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+
+/* <antd carousel component> */
+.slider {
+  height: 100%;
+}
+.slider .slick-slide{
+  height: 100% !important;
+  background-image: url('../src/banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.slider .ant-carousel{
+  /* height: 750px !important; */
+  height: 100% !important;
+}
+.slider .slick-slider{
+  height: 100% !important;
+}
+.slider .slick-list{
+  height: 100% !important;
+}
+.slider .slick-dots>li{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 1px !important;
+}
+.slider .slick-track{
+  height: 100%;
+}
+
+.slider .ant-carousel .slick-dots li button{
+  width: 60% !important;
+  height: 9px !important;
+  border-radius: 50% !important;
+  color: #fff !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+
+.slider .ant-carousel .slick-dots li.slick-active {
+  width: 30px !important;
+}
+
+.slider .ant-carousel .slick-dots li.slick-active button {
+  background: #0ef342 !important;
+  width: 100%!important;
+  border-radius: 5px!important;
+}
+
+.slider .ant-carousel .slick-dots-bottom {
+  bottom: 30px;
+}
+
+/* </antd carousel component> */
+
+
+/* <menu react-bootstrap component> */
+
+.navbar{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  background-color: transparent !important;
+  direction: rtl;
+  padding: 5px 10px;
+}
+
+.navbar-collapse{
+  text-align: right;
+
+  
+  justify-content: space-between;
+  margin: .3125rem 6px;
+}
+.dropdown-toggle::after{
+  margin-right: 3px;
+  margin-bottom: -2px;
+}
+@media only screen and (min-width: 768px){
+.mr-auto{
+  margin-right: 30px !important;
+  }
+}
+.mode{
+  width: 100px;
+  height: 90%;
+  background-color: rgb(28 , 32 , 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* </menu react-bootstrp component> */
+
+
+
+
+/* <nav componnet> */
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  height: 50px;
+  
+  position: fixed;
+  z-index: 100;
+}
+
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links{
+  display: flex;
+  width: 60%;
+  z-index: 100;
+ 
+}
+
+.links>ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.links>ul>li{
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.links img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.registerandmode{
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  margin-right: 20px;
+}
+
+.registerandmode a{
+  text-decoration: none;
+}
+
+.registerandmode>div{
+  margin: 0 15px;
+}
+
+.log>a{
+  margin: 0 10px;
+  color: #fff;
+}
+
+.log>span{
+  color: #564242;
+}
+
+.mode{
+  width: 60px;
+  height: 30px;
+  background-color: rgb(3 41 65);
+  border-radius: 5px;
+}
+
+
+/* </nav componnet> */
+
+
+/* <table component> */
+
+.table{
+  width: 100%;
+  height: 700px;
+  background-color: rgb(37, 41, 55) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0;
+}
+
+
+.MuiPaper-root {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 75px;
+  position: absolute;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.MuiTableContainer-root{
+  width: 80%;
+}
+
+.MuiTableRow-head{
+  background-color: #fff !important;
+}
+.MuiTableHead-root{
+  background-color: #fff !important;
+}
+.MuiTable-root{
+  width: 93% !important;
+  color: #fff !important;
+
+}
+
+
+.WithStyles\(ForwardRef\(TableCell\)\)-head-2{
+  direction: rtl !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important;
+  text-align: right !important;
+  background-color: rgb(28 , 32 , 45) !important;
+}
+
+.WithStyles\(ForwardRef\(TableRow\)\)-root-4:nth-of-type(odd){
+  background-color: rgb(28 , 32 , 45) !important;
+  
+}
+
+.WithStyles\(ForwardRef\(TableCell\)\)-body-3{
+  color: #fff !important;
+}
+
+.MuiTableCell-root{
+  font-size: 14px !important;
+  padding: 14px !important;
+  border: none !important;
+  text-align: center !important;
+}
+
+/* </table component> */
+
+/* <info component> */
+
+.info{
+  background-image: url('../src/Bitmap.png');
+  background-position: center;
+  background-size: cover;
+  
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.info::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(26, 31, 43, .7);;
+}
+
+
+.info>div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info>div>div{
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info .col-sm-3{
+  word-break:keep-all;
+}
+
+/* .info>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px;
+  justify-content: center;
+  z-index: 500;
+  position: relative;
+} */
+
+
+.num{
+  color: #fff !important;
+}
+.descript{
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 576px){
+  .info h3{
+    font-size: 1.25em !important;
+  }
+  .info h4{
+    font-size: 1.15em;
+  }
+}
+
+/* </info component> */
+
+/* <infoandpros div> */
+
+.infoandpros{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(36 , 41 , 55);
+  justify-content: space-between;
+}
+
+/* </infoandpros div> */
+
+
+/* <pros component> */
+
+.pros{
+  width: 100%;
+  height: 52%;
+  /* max-height: 46%; */
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+.pros>div{
+  /* min-height: 130px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+ 
+}
+.pros img{
+  width: 13%;
+  height: 13%;
+  object-fit: cover;
+  margin: 0 0 7px 0;
+}
+
+.pros h3{
+  font-size: 17px !important;
+  color: #fff !important;
+}
+
+.row{
+  width: 100%;
+}
+
+.pros .col-sm-3{
+  justify-content: center;
+  text-align: center !important;
+}
+
+.row>div>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 575px){
+  .pros h3{
+    font-size: .85em !important;
+  }
+  
+}
+
+@media screen and (min-width: 365px) and (max-width: 575px){
+  .pros img{
+    width: 10%;
+    height: 10%;
+  }
+}
+
+/* @media only screen  and (max-height: 575px){
+  .pros img{
+    width: 11% !important;
+    height: 11% !important;
+  }
+} */
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .pros img{
+    width: 55%;
+    height: 55%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .pros img{
+    width: 20%;
+    height: 20%;
+  }
+}
+
+
+
+@media only screen and (min-width:993px){
+  .pros img{
+    width: 30%;
+    height: 30%;
+  }
+}
+
+/* </pros component> */
+
+
+
+/* <postsandfooter> */
+
+.postsandfooter{
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px){
+  .postsandfooter .ant-carousel{
+    height: 35%;
+  }
+  
+  .postsandfooter .ant-carousel div{
+    height: 100%;
+  }
+
+  .posts-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .posts-detail{
+    height: 10% !important;
+    margin-top: -23px;
+  }
+}
+
+
+/* </postsandfooter> */
+
+/* <posts component> */
+
+.posts{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(37, 41, 55);
+}
+
+.posts .container{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts .container .row{
+  height: 35%;
+}
+
+.posts-article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  background-image: url('/src/Blog.png');
+  filter: saturate(100%);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: -1px -2px 5px 5px  rgb(32 , 35 , 48);
+  color: #fff;
+  
+}
+
+.posts-article>div{
+  /* width: 32%; */
+  /* height: 80%; */
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.posts-article>div::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 31, 43, .57);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.posts>p{
+  position: absolute;
+  top: 90%;
+  left: 45%;
+}
+
+.posts>div>div>div{
+  z-index: 500 !important;
+  color: #fff;
+}
+
+
+.posts-header{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 7px;
+}
+
+.posts-detail{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.posts-blog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: #fff;
+}
+.posts-blog-icon{
+ 
+  margin-right: 4px;
+}
+.posts-blog-icon svg{
+  height: 11px;
+  width: 12px;
+ 
+}
+
+/* </posts component> */
+
+
+/* <shortslider> */
+
+@keyframes bottomchanging{
+  from {bottom: 0;}
+  to {bottom: 350px;}
+}
+
+@keyframes backtozero{
+  from {bottom: 350px;}
+  to {bottom: 0;}
+}
+
+
+.shortslider{
+  width: 165%;
+  height: 35px;
+  background-color: rgba(28, 31, 42,.85);
+  overflow: hidden !important;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+
+}
+
+.shortslider>div{
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  /* overflow-x: hidden !important; */
+  width: 200%;
+}
+
+.shortslider>div>div{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 5px;
+  
+}
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+
+  .shortslider{
+    width: 100%;
+  }
+
+  .shortslider>div{
+    width: 110%;
+  }
+
+  .shortslider>div>div{
+    width: 280px;
+  }
+  @keyframes move {
+    from {left:100%;}
+    to {left: -100%;}
+  }
+}
+
+@media screen and (min-width: 671px) and (max-width: 1023px){
+
+  .shortslider{
+    width: 140%;
+  }
+
+  .shortslider>div{
+    width: 115%;
+  }
+
+  @keyframes move {
+    from {left:100%;}
+    to {left: -90%;}
+  }
+}
+
+@media screen and (min-width: 435px) and (max-width: 670px){
+
+  .shortslider{
+    width: 160%;
+  }
+
+  .shortslider>div{
+    width: 160%;
+  }
+  @keyframes move {
+    from {left:100%;}
+    to {left: -120%;}
+  }
+}
+
+@media only screen and (max-width: 434px){
+  .shortslider{
+    width: 180%;
+  }
+  .shortslider>div{
+    width: 220%;
+  }
+  @keyframes move {
+    from {left:100%;}
+    to {left: -170%;}
+  }
+}
+
+
+
+.shortslider>div{
+  
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.shortslider>div>div>p{
+  margin: 0 7px;
+  font-size: 14px;
+}
+
+.shortslider img{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* </shortslider> */
+
+
+
+/* <footer component> */
+
+.footer{
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: rgb(28 , 32 , 45);
+  /* padding-top: 10px; */
+}
+
+.col-sm-4{
+  text-align: right;
+  word-break: break-word;
+ 
+}
+
+@media only screen and (max-width: 576px){
+  .col-sm-4>ul{
+    height: 80%;
+  }
+}
+@media only screen and (min-width: 576px){
+  .col-sm-4>ul{
+    height: 30% !important; 
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .footer .container{
+    justify-content: flex-start !important;
+  }
+
+  .footer>.container>:first-child{
+    height: 50% !important;
+  }
+
+  .footer>.container>:first-child>div{
+    height: 100% !important;
+  }
+}
+
+.col-sm-4>ul{
+  height: 65%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-sm-6{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .container{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 80%;
+}
+
+@media only screen and (min-width:576px){
+  .footer .container {
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width:330px){
+  .footer>.container>:first-child {
+    height: 88% !important;
+
+  }
+  .footer .container {
+    justify-content: flex-start !important;
+  }
+}
+
+@media only screen and (max-width:575px){
+  .footer .container {
+    justify-content: center;
+  }
+  .footer .container .row>div{
+    padding-top: 10px;
+  }
+}
+
+.footer>.container>:first-child{
+  height: 80%;
+  color: #fff;
+}
+.footer>.container:first-child h4{
+  color: #fff;
+}
+.footer>.container:first-child ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-height: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer>.container:first-child a{
+  color: #fff;
+}
+
+.last-row{
+  max-height: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.last-col{
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 766px){
+  .last-col{
+    justify-content: flex-start;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 294px){
+  .last-col{
+    margin-right: 0;
+  }
+}
+
+.fin{
+ display: flex;
+ flex-direction: row !important;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+@media only screen and (max-width:320px){
+  .fin{
+    font-size: 12px;
+  }
+}
+
+.fin>p{
+  margin-bottom: 7px;
+}
+.fin>a{
+  margin: 0 6px;
+}
+
+
+.fin>svg{
+  width: 15px;
+  height: 15px;
+}
+
+
+
+/* </footer component> */

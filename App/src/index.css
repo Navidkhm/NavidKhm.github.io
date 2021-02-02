@@ -1,0 +1,25 @@
+@font-face{
+  font-family: yekan-bakh;
+  src: url('/Users/navid/Desktop/zero/ReactJs/my-app/src/Yekan Bakh/Yekan Bakh EN 04 Regular.ttf');
+}
+
+html, body{
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, yekan-bakh !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root{
+  overflow-x: hidden !important;
+}
